@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Hansson"
+  given-names: "Pernilla"
+  orcid: "https://orcid.org/0000-0001-8476-2122"
+- family-names: "Aygür"
+  given-names: "Ege"
+title: "Eel tracking"
+version: 1.0.0
+date-released: 2024-08-21
+url: "https://github.com/P-Hansson/eel-tracking"
