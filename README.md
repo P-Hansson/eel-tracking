@@ -8,7 +8,7 @@ The following packages are required:
 
 ### Description of the file structure to be:
 The following diagram shows the file structure. Note that the codes do not create this folder structure if it does not exist, so the necessary folders must be present before running the codes.
-<img width="608" alt="image" src="https://github.com/user-attachments/assets/3e886ff8-0af7-4727-bacf-628814d60b8e">
+<img width="608" src="./readme_images/Folder_diagram.png">
 <br>
 NOTE: the R code is not included in the diagram since it can be placed in any folder as the working directory is instead specified in the code
 <br>
@@ -29,7 +29,7 @@ This code extracts the first image for each video in the folder "missing_boundar
 **select_boundaries** (R)<br>
 Note that although the package and code used in this section was designed for morphometric analyses, the code included here has retrofitted it for the purpose of extracting a csv file with coordinates for the boxes. If coordinates are produced through other means, be aware that the following python codes invert the y-axis due to the different treatments of the position of the origo (in R it is in the bottom left, in python it is in the top left).
 This code shows one image from the folder "create_boundaries/images" at a time, allowing you to select the boundaries for the containers. The setup is for four square containers, where you select 16 points in total. The order of selection is shown in the image below
-![image](https://github.com/user-attachments/assets/d4f0b73b-5588-4e3c-b4b2-b34156b01e51)
+<img width="650" src="./readme_images/Box_order.jpg">
 
 After each selection, you decide whether to accept the point or not. To accept the point, select "y", to reposition it, select "n". There "a" alternative exists but is not useful for this code. The positions are saved as a .tps file. This code also contains another section that transforms the .tps file into a .csv file that can then be used by the other codes. This .csv file is saved as "Box_boundaries.csv".
 
